@@ -1,0 +1,59 @@
+---
+title: 'Formas de Pagamento'
+icon: 'credit-card'
+description: 'Configura as formas de pagamento do servidor'
+---
+
+## Introdução
+
+Primeiramente vá até as configurações do servidor ( /config ), e navegue até a opção **Formas de pagamentos**, ao selecionar irá exibir a seguinte mensagem
+
+<img height="200" src="../../images/configuration/payment-message.png" />
+
+Abaixo está uma breve explicação sobre cada forma de pagamento
+
+<Tabs>
+  <Tab title="Mercado Pago">
+    Essa é a forma de pagamento mais utilizada no bot, com ela você pode fazer vendas 100% automatizadas na sua loja
+
+    ## Configurando o Mercado Pago
+
+    Com o painel de formas de pagamentos aberto, clique na opção mercado pago
+
+    <img height="200" src="../../images/configuration/mp.png" />
+
+    Ao clicar na opção **Conta do mercado pago**, sera exibido a mensagem
+
+    <img height="200" src="../../images/configuration/mp_link.png" />
+
+    Ao clicar no botão para se autorizar, você será redirecionado ao site do mercado pago
+
+    <img height="200" src="../../images/configuration/mp-web.png" />
+
+    Agora so basta selecionar o seu país e clicar em continuar e pronto, mercado pago foi vinculado ao seu servidor
+
+    <Note>Não é possivel habilitar a forma de pagamento semi automatica e automatica juntas nos produtos</Note>    
+  </Tab>
+  <Tab title="Semi automatico">
+    Com essa forma de pagamento você têm total controle sobre suas transaçõe0s. No entanto, você precisará aprovar manualmente as compras realizadas.
+
+    ## Configurando o pagamento semi automatico
+
+    Com o painel de formas de pagamentos aberto, clique na opção manual (PIX)  
+
+    <img height="200" src="../../images/configuration/manual.png" />
+
+    Clique no botão ativar e posteriomente clique em gerenciar, será exibido a seguinte modal
+
+    <img height="200" src="../../images/configuration/copy.png" />
+
+    <Note>O Qrcode do carrinho de compras não irá funcionar se você informar uma chave aleatoria (PIX)</Note>    
+  </Tab>
+  <Tab title="Coinbase">
+    Com essa forma de pagamento você poderá receber pagamentos automaticos em criptomoedas
+    <Warning>A Forma de Pagamento <strong>Coinbase</strong> foi desativado!!</Warning> 
+  </Tab>  
+  <Tab title="Saldo">
+    Saldo é uma forma de pagamento interna no **Giggle**, você pode adicionar saldo a conta do usuario utilizando **/saldo adicionar**
+  </Tab>    
+</Tabs>
